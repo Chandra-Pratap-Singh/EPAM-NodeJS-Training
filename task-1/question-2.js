@@ -1,17 +1,6 @@
-// const readline = require('readline');
-// const fs = require('fs');
-
-// const readInterface = readline.createInterface({
-//     input: fs.createReadStream('./question-1.js')
-// });
-
-// readInterface.on('line', function(line) {
-//     console.log(line);
-// });
-
 var rl = require('readline');
 var fs = require('fs');
-var rs = fs.createReadStream('./question-1.js');
+var rs = fs.createReadStream('./sample.csv');
 var ws = fs.createWriteStream('output.txt');
 
 var rli = rl.createInterface({
